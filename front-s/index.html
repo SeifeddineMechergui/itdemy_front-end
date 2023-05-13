@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Itdemy</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="nav container">
+        <a href="index.html" class="nav-logo">
+        <i class='bx bx-compass'></i> Itdemy
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/Events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/Course.html" class="nav-link">Course</a>
+            </li>
+                      </ul>
+         
+          
+         <ul class="nav-list nav-account" style="margin-top: 1rem">
+                <li class="nav-item" style="width: 100%; text-align: center">
+                <a
+                    href="./pages/Login.html"
+                    class="button nav-link"
+                    style="display: block; width: 100%"
+                    >Login</a
+                >
+                </li>
+                <li class="nav-item" style="width: 100%; text-align: center">
+                <a
+                    href="./pages/Register.html"
+                    class="button nav-link"
+                    style="display: block; width: 100%"
+                    >Register</a
+                >
+                </li>
+            </ul>
+         
+          <div class="nav-close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav-btns">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    <div class="btn-account">
+            <a href="./pages/Login.html" class="btn btn-login">Login</a>
+            <a href="./pages/Register.html" class="btn btn-register">Register</a>
+          </div>
+                    
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="dropdown" id="dropdown">
+      <i class="bx bx-x dropdown-close" id="dropdown-close"></i>
+
+      <a href="./pages/Course.html"><h2 class="dropdown-title-center">My Course</h2></a>
+      <a href="#" onclick="getElementById('logout').submit()"><h2 class="dropdown-title-center">Logout</h2></a>
+      <form id="logout" action="http://127.0.0.1:8000/logout" method="post">
+          <input type="hidden" name="_token" value="vYrv4kUWQnD8XTC0BkxuesphLXGPyY5FzOtuBWYa">      </form>
+    </div>
+
+    <main class="main container">
+     <section class="home" id="home">
+        <div class="home-container container grid">
+          <div class="home-img-bg">
+            <img src="./images/home-bg.jpg" style="height: 100%; width: 100%;" alt="" class="home-img" />
+          </div>
+
+          <div class="home-data">
+            <h1 class="home-title">
+              We Teach You <br />
+              Everything You Need To Know
+            </h1>
+            <p class="home-description">
+              Discover the way you learn & take control of your life and make
+              something useful for others.
+            </p>
+            <div class="home-btns">
+              <a href="./pages/Course.html" class="button btn-gray btn-small"> My Course </a>
+              <a href="#course" class="button button-home">Discover Course</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section container">
+        <div class="story-container grid">
+          <div class="story-data">
+            <h2 class="section-title story-section-title">Our Goals</h2>
+            <h1 class="story-title">
+              Enjoy learning without any pressure
+            </h1>
+
+            <p class="story-description">
+              Learn make something with real world project that help you increase creativity
+            </p>
+            <a href="#course" class="button btn-small">Discover</a>
+          </div>
+          <div class="story-images">
+            <img src="./images/goals.jpg" alt="" class="story-img" />
+            <div class="story-square"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products section container" id="course">
+        <h2 class="section-title">All Course</h2>
+
+        <div class="new-container">
+          <div class="swiper new-swipper">
+            <div class="swiper-wrapper">
+                          <article class="products-card swiper-slide">
+              <a style="color: inherit;" href="http://127.0.0.1:8000/courses/HTML5" class="products-link">
+                <img
+                  src="/storage/images/courses/ENW94xdHjWtwa37riTvd6tfaBMzg4SXrBQXgy1GV.jpg"
+                  class="products-img"
+                  alt=""
+                />
+                <h3 class="products-title">HTML</h3>
+                <div class="products-star">
+                                                        <i class="bx bxs-star"></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                    </div>
+                <span class="products-price">$0</span>
+                                <span class="products-student">
+                4 students
+                </span>
+              </a>
+              </article>
+                          <article class="products-card swiper-slide">
+              <a style="color: inherit;" href="http://127.0.0.1:8000/courses/java" class="products-link">
+                <img
+                  src="/storage/images/courses/AA0JxUN2YXpJipoHcfyGWSW2qevBmt3Lzc9rxo33.jpg"
+                  class="products-img"
+                  alt=""
+                />
+                <h3 class="products-title">java</h3>
+                <div class="products-star">
+                                                        <i class="bx bxs-star"></i>
+                                                                            <i class="bx bxs-star"></i>
+                                                                            <i class="bx bxs-star"></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                    </div>
+                <span class="products-price">$0</span>
+                                <span class="products-student">
+                3 students
+                </span>
+              </a>
+              </article>
+                
+            </div>
+            <div
+              class="swiper-button-next"
+              style="
+                bottom: initial;
+                top: 50%;
+                right: 0;
+                left: initial;
+                border-radius: 50%;
+              "
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div
+              class="swiper-button-prev"
+              style="bottom: initial; top: 50%; border-radius: 50%"
+            >
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial section container">
+        <div class="testimonial grid">
+          <div class="swiper testimonial-swipper">
+            <div class="swiper-wrapper">
+              <div class="testimonial-card swiper-slide" style="text-align: center;">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                  labore reiciendis laboriosam quos at eum, sed sequi tempore
+                  perspiciatis magnam iste quas sit minima provident!
+                </p>
+                <h3 class="testimonial-date">March 27, 2021</h3>
+
+                <div class="testimonial-profile" style="justify-content: center;flex-direction: column;row-gap: 1.4rem;">
+                  <img
+                    src="./images/testimonial1.jpg"
+                    alt=""
+                    class="testimonial-profile-img"
+                  />
+
+                  <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">Mechergui Seifeddine</span>
+                    <span class="testimonial-profile-detail"
+                      >Software developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card swiper-slide" style="text-align: center;">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                  labore reiciendis laboriosam quos at eum, sed sequi tempore
+                  perspiciatis magnam iste quas sit minima provident!
+                </p>
+                <h3 class="testimonial-date">March 27, 2021</h3>
+
+                <div class="testimonial-profile" style="justify-content: center;flex-direction: column;row-gap: 1.4rem;">
+                  <img
+                    src="./images/testimonial1.jpg"
+                    alt=""
+                    class="testimonial-profile-img"
+                  />
+
+                  <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">Mecherui Seifeddine</span>
+                    <span class="testimonial-profile-detail"
+                      >Software developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card swiper-slide" style="text-align: center;">
+                <div class="testimonial-quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                  labore reiciendis laboriosam quos at eum, sed sequi tempore
+                  perspiciatis magnam iste quas sit minima provident!
+                </p>
+                <h3 class="testimonial-date">March 27, 2021</h3>
+
+                <div class="testimonial-profile" style="justify-content: center;flex-direction: column;row-gap: 1.4rem;">
+                  <img
+                    src="./images/testimonial1.jpg"
+                    alt=""
+                    class="testimonial-profile-img"
+                  />
+
+                  <div class="testimonial-profile-data">
+                    <span class="testimonial-profile-name">Mechergui Seifeddine</span>
+                    <span class="testimonial-profile-detail"
+                      >Software developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next" style="right: 30%;left: initial;top:initial;bottom: 3rem;">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-prev" style="right: initial;left: 30%;top:initial;bottom: 3rem;">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+      </section>
+
+      <section class="newsletter section container">
+        <div class="newsletter-bg grid">
+          <div>
+            <h2 class="newsletter-title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <p class="newsletter-description">
+              Be the first to know the new course and discount.
+            </p>
+          </div>
+
+          <form action="" class="newsletter-subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+            />
+            <button class="button">BUTTON</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer-container container grid">
+        <div class="footer-content">
+          <h3 class="footer-title">Our Information</h3>
+          <ul class="footer-list">
+            <li>24286285</li>
+            <li>Bizerte</li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Menu</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">home</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">course</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">categories</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Account</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">register</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">login</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">faq</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Social Media</h3>
+          <ul class="footer-social">
+            <a href="https://github.com/SeifeddineMechergui" class="footer-social-link">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer-copy">&#169;Itdemy,Software academy</span>
+    </footer>
+
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scroll-up-icon"></i>
+    </a>
+
+    <!-- swiper -->
+    <script src="./js/swiper.js"></script>
+    <!--===== MAIN JS =====-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

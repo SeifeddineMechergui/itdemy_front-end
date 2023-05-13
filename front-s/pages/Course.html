@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../css/swiper.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Itdemy</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="nav container">
+        <a href="../index.html" class="nav-logo">
+        <i class='bx bx-compass'></i> Itdemy
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="./Course.html" class="nav-link">Course</a>
+            </li>
+                      </ul>
+         
+          
+         <ul class="nav-list nav-account" style="margin-top: 1rem">
+                <li class="nav-item" style="width: 100%; text-align: center">
+                <a
+                    href="./Login.html"
+                    class="button nav-link"
+                    style="display: block; width: 100%"
+                    >Login</a
+                >
+                </li>
+                <li class="nav-item" style="width: 100%; text-align: center">
+                <a
+                    href="./Register.html"
+                    class="button nav-link"
+                    style="display: block; width: 100%"
+                    >Register</a
+                >
+                </li>
+            </ul>
+         
+          <div class="nav-close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav-btns">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+                    <div class="btn-account">
+            <a href="./Login.html" class="btn btn-login">Login</a>
+            <a href="./Register.html" class="btn btn-register">Register</a>
+          </div>
+                    
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="dropdown" id="dropdown">
+      <i class="bx bx-x dropdown-close" id="dropdown-close"></i>
+
+      <a href="./Course.html"><h2 class="dropdown-title-center">My Course</h2></a>
+      <a href="#" onclick="getElementById('logout').submit()"><h2 class="dropdown-title-center">Logout</h2></a>
+      <form id="logout" action="http://127.0.0.1:8000/logout" method="post">
+          <input type="hidden" name="_token" value="vYrv4kUWQnD8XTC0BkxuesphLXGPyY5FzOtuBWYa">      </form>
+    </div>
+
+    <main class="main container">
+         <section class="products section container" id="course">
+        <h2 class="section-title">My Course</h2>
+
+        <div class="featured-container grid">
+                            <h2 style="text-align: center;grid-column: 1/5">You haven't purchased course yet</h2>
+                        </div>
+      </section>
+
+    <section class="products section container" id="course">
+        <h2 class="section-title">All Course</h2>
+
+        <div class="new-container">
+          <div class="swiper new-swipper">
+            <div class="swiper-wrapper">
+                          <article class="products-card swiper-slide">
+              <a style="color: inherit;" href="http://127.0.0.1:8000/courses/HTML5" class="products-link">
+                <img
+                  src="/storage/images/courses/ENW94xdHjWtwa37riTvd6tfaBMzg4SXrBQXgy1GV.jpg"
+                  class="products-img"
+                  alt=""
+                />
+                <h3 class="products-title">HTML</h3>
+                <div class="products-star">
+                                                        <i class="bx bxs-star"></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                    </div>
+                <span class="products-price">$0</span>
+                                <span class="products-student">
+                4 students
+                </span>
+              </a>
+              </article>
+                          <article class="products-card swiper-slide">
+              <a style="color: inherit;" href="http://127.0.0.1:8000/courses/java" class="products-link">
+                <img
+                  src="/storage/images/courses/AA0JxUN2YXpJipoHcfyGWSW2qevBmt3Lzc9rxo33.jpg"
+                  class="products-img"
+                  alt=""
+                />
+                <h3 class="products-title">java</h3>
+                <div class="products-star">
+                                                        <i class="bx bxs-star"></i>
+                                                                            <i class="bx bxs-star"></i>
+                                                                            <i class="bx bxs-star"></i>
+                                                                            <i class='bx bx-star'></i>
+                                                                            <i class='bx bx-star'></i>
+                                                    </div>
+                <span class="products-price">$0</span>
+                                <span class="products-student">
+                3 students
+                </span>
+              </a>
+              </article>
+                
+            </div>
+            <div
+              class="swiper-button-next"
+              style="
+                bottom: initial;
+                top: 50%;
+                right: 0;
+                left: initial;
+                border-radius: 50%;
+              "
+            >
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div
+              class="swiper-button-prev"
+              style="bottom: initial; top: 50%; border-radius: 50%"
+            >
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer-container container grid">
+        <div class="footer-content">
+          <h3 class="footer-title">Our Information</h3>
+          <ul class="footer-list">
+            <li>24286285</li>
+            <li>Bizerte</li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Menu</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">home</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">course</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">categories</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Account</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link">register</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">login</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">faq</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-title">Social Media</h3>
+          <ul class="footer-social">
+            <a href="https://github.com/SeifeddineMechergui" class="footer-social-link">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer-copy">&#169;Itdemy,Software academy</span>
+    </footer>
+
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scroll-up-icon"></i>
+    </a>
+
+    <!-- swiper -->
+    <script src="../js/swiper.js"></script>
+    <!--===== MAIN JS =====-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
